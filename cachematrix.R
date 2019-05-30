@@ -3,6 +3,11 @@
 
 ## Write a short comment describing this function
 
+## Caching inverse of a matrix:
+## Below are two functions that are used to create a special object that 
+## stores a matrix and caches its inverse.
+
+## This function creates a special "matrix" object that can cache its inverse.
 makeCacheMatrix <- function(x = matrix()) {
   inv <- NULL
   set <- function(y){
@@ -33,6 +38,7 @@ cacheSolve <- function(x, ...) {
   inv
 }
 
+##test
 matrix1<-makeCacheMatrix(matrix(1:4,2,2))
 matrix1$get()
 cacheSolve(matrix1)
